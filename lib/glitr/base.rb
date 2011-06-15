@@ -17,6 +17,7 @@ module Glitr
       def entity_type=(type)
         @entity_type = type
       end
+      alias :set_entity_type :entity_type=
 
       def namespace
         @namespace
@@ -25,8 +26,6 @@ module Glitr
       def namespace=(ns)
         @namespace = ns
       end
-
-      alias :set_entity_type :entity_type=
       alias :set_namespace :namespace=
 
       def all(conditions = {})
